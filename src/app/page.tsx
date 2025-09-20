@@ -22,7 +22,7 @@ export default function HomePage() {
   }
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('ro-RO', {
+    return date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit'
@@ -35,14 +35,14 @@ export default function HomePage() {
         {/* Header */}
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            Profesor<span className="text-primary">X</span>Trader
+            Professor<span className="text-primary">X</span>Trader
           </h1>
           <p className="mt-4 text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dashboard profesional pentru monitorizarea Binance cu analiză AI avansată și management în timp real al portofoliului
+            Professional trading dashboard for Binance monitoring with advanced AI analysis and real-time portfolio management
           </p>
           <div className="mt-6 flex justify-center gap-2 flex-wrap">
             <Badge variant="secondary" className="text-sm animate-pulse">
-              🚀 Actualizat Septembrie 2025
+              🚀 Updated September 2025
             </Badge>
             <Badge variant="outline" className="text-sm">
               v0.2.0
@@ -61,7 +61,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <Activity className="h-5 w-5 text-amber-600 animate-pulse" />
                   <span className="font-medium text-amber-900 dark:text-amber-100">
-                    Sistem de monitorizare în timp real - Actualizări live la fiecare secundă
+                    Real-time monitoring system - Live updates every second
                   </span>
                 </div>
                 <Badge variant="outline" className="bg-amber-100 text-amber-800 border-amber-300">
@@ -76,35 +76,35 @@ export default function HomePage() {
         <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4">
           <Card className="border-border/50 hover:border-border transition-all duration-300 hover:shadow-lg">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Balanță Totală</CardTitle>
+              <CardTitle className="text-sm font-medium">Total Balance</CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold font-mono">$0.00</div>
               <div className="flex items-center gap-2 mt-1">
                 <div className="h-2 w-2 bg-red-500 rounded-full animate-pulse" />
-                <p className="text-xs text-muted-foreground">API încă neconectat</p>
+                <p className="text-xs text-muted-foreground">API not connected yet</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="border-border/50 hover:border-border transition-all duration-300 hover:shadow-lg">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">PnL 24h</CardTitle>
+              <CardTitle className="text-sm font-medium">24h PnL</CardTitle>
               <TrendingUp className="h-4 w-4 text-profit" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold font-mono text-muted-foreground">+$0.00</div>
               <div className="flex items-center gap-1 mt-1">
                 <BarChart3 className="h-3 w-3 text-profit" />
-                <p className="text-xs text-profit">+0.00% din ieri</p>
+                <p className="text-xs text-profit">+0.00% from yesterday</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="border-border/50 hover:border-border transition-all duration-300 hover:shadow-lg">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Poziții Active</CardTitle>
+              <CardTitle className="text-sm font-medium">Active Positions</CardTitle>
               <PieChart className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
@@ -131,10 +131,10 @@ export default function HomePage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Activity className="h-5 w-5 text-primary" />
-                Monitorizare în Timp Real
+                Real-time Monitoring
               </CardTitle>
               <CardDescription>
-                Streaming live cu actualizări la microsecundă (2025 upgrade)
+                Live streaming with microsecond updates (2025 upgrade)
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -144,21 +144,21 @@ export default function HomePage() {
                     <Zap className="h-3 w-3" />
                     Spot Wallet
                   </span>
-                  <Badge variant="outline">Pregătit</Badge>
+                  <Badge variant="outline">Ready</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm flex items-center gap-2">
                     <Zap className="h-3 w-3" />
                     Futures Wallet
                   </span>
-                  <Badge variant="outline">Pregătit</Badge>
+                  <Badge variant="outline">Ready</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm flex items-center gap-2">
                     <Sparkles className="h-3 w-3" />
                     WebSocket μs Stream
                   </span>
-                  <Badge variant="secondary">Nou 2025</Badge>
+                  <Badge variant="secondary">New 2025</Badge>
                 </div>
               </div>
             </CardContent>
@@ -171,22 +171,22 @@ export default function HomePage() {
                 AI & Machine Learning
               </CardTitle>
               <CardDescription>
-                Analiză predictivă avansată cu modele 2025
+                Advanced predictive analysis with 2025 models
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm">Pattern Recognition</span>
-                  <Badge variant="secondary">În dezvoltare</Badge>
+                  <Badge variant="secondary">In Development</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm">Sentiment Analysis</span>
-                  <Badge variant="secondary">În dezvoltare</Badge>
+                  <Badge variant="secondary">In Development</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm">Neural Networks</span>
-                  <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">Nou</Badge>
+                  <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">New</Badge>
                 </div>
               </div>
             </CardContent>
@@ -196,25 +196,25 @@ export default function HomePage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Target className="h-5 w-5 text-blue-500" />
-                Indicatori Tehnici 2025
+                Technical Indicators 2025
               </CardTitle>
               <CardDescription>
-                Suite completă de indicatori moderni
+                Complete suite of modern indicators
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm">VWAP Enhanced</span>
-                  <Badge variant="outline">Pregătit</Badge>
+                  <Badge variant="outline">Ready</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
-                  <span className="text-sm">RSI cu Divergențe</span>
-                  <Badge variant="secondary">În dezvoltare</Badge>
+                  <span className="text-sm">RSI with Divergences</span>
+                  <Badge variant="secondary">In Development</Badge>
                 </div>
                 <div className="flex justify-between items-center py-2 px-3 rounded-md bg-muted/30">
                   <span className="text-sm">OBV + Volume Profile</span>
-                  <Badge variant="secondary">Planificat</Badge>
+                  <Badge variant="secondary">Planned</Badge>
                 </div>
               </div>
             </CardContent>
@@ -226,10 +226,10 @@ export default function HomePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Activity className="h-5 w-5 text-green-600" />
-              Status Piață în Timp Real
+              Real-time Market Status
             </CardTitle>
             <CardDescription>
-              Conectivitate Binance API cu uptime 99.98% (H1 2025)
+              Binance API connectivity with 99.98% uptime (H1 2025)
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -255,10 +255,10 @@ export default function HomePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Settings className="h-5 w-5" />
-              Configurare Inițială - Actualizat 2025
+              Initial Setup - Updated 2025
             </CardTitle>
             <CardDescription>
-              Setup complet pentru toate funcționalitățile noi
+              Complete setup for all new features
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -269,11 +269,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-semibold flex items-center gap-2">
-                    Obține API Key-uri Binance
+                    Get Binance API Keys
                     <Badge variant="outline" className="text-xs">Enhanced 2025</Badge>
                   </h4>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Creează API key-uri cu suport pentru microsecunde și toate perechile noi
+                    Create API keys with microsecond support and all new trading pairs
                   </p>
                 </div>
               </div>
@@ -287,10 +287,10 @@ export default function HomePage() {
                 <div className="flex-1">
                   <h4 className="font-semibold flex items-center gap-2">
                     Setup AI Models
-                    <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs">Nou</Badge>
+                    <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs">New</Badge>
                   </h4>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Configurare modele de machine learning pentru analiză predictivă
+                    Configure machine learning models for predictive analysis
                   </p>
                 </div>
               </div>
@@ -302,9 +302,9 @@ export default function HomePage() {
                   3
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-muted-foreground">Testare Sistem Complet</h4>
+                  <h4 className="font-semibold text-muted-foreground">Complete System Testing</h4>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Verifică toate componentele: API, AI, WebSocket streams și indicatori
+                    Verify all components: API, AI, WebSocket streams and indicators
                   </p>
                 </div>
               </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
             <div className="mt-6 flex gap-3 flex-wrap">
               <Button className="flex-1 min-w-[200px]" disabled>
                 <Settings className="mr-2 h-4 w-4" />
-                Configurează API
+                Configure API
               </Button>
               <Button variant="outline" disabled>
                 <Brain className="mr-2 h-4 w-4" />
@@ -321,7 +321,7 @@ export default function HomePage() {
               </Button>
               <Button variant="secondary" disabled>
                 <Shield className="mr-2 h-4 w-4" />
-                Test Complet
+                Complete Test
               </Button>
             </div>
           </CardContent>
@@ -331,11 +331,11 @@ export default function HomePage() {
         <div className="mt-12 text-center text-sm text-muted-foreground">
           <div className="flex justify-center items-center gap-2 mb-2">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span>Actualizat cu ultimele tehnologii din Septembrie 2025</span>
+            <span>Updated with latest technologies from September 2025</span>
             <Sparkles className="h-4 w-4 text-primary" />
           </div>
           <p>
-            Dezvoltat de{' '}
+            Developed by{' '}
             <a 
               href="https://github.com/Gzeu" 
               target="_blank" 
@@ -346,7 +346,7 @@ export default function HomePage() {
             </a>
           </p>
           <p className="mt-1">
-            ProfesorXTrader v0.2.0 - Dashboard Profesional de Trading cu AI Enhanced
+            ProfessorXTrader v0.2.0 - Professional Trading Dashboard with AI Enhanced
           </p>
         </div>
       </div>
