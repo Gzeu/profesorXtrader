@@ -1,0 +1,30 @@
+/* ai-analysis.css - Styles for AIAnalysis component */
+.ai-analysis {
+  backdrop-filter: saturate(1.2) contrast(1.02);
+}
+.ai-analysis .card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.35));
+}
+@media (prefers-color-scheme: dark) {
+  .ai-analysis .card {
+    background: linear-gradient(180deg, rgba(17,24,39,0.65), rgba(17,24,39,0.35));
+  }
+}
+.ai-analysis .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.ai-analysis .badge-bullish {
+  background: linear-gradient(90deg, #bbf7d0, #86efac);
+  color: #065f46;
+}
+.ai-analysis .badge-bearish {
+  background: linear-gradient(90deg, #fecaca, #fca5a5);
+  color: #7f1d1d;
+}
+.ai-analysis .badge-neutral {
+  background: linear-gradient(90deg, #e5e7eb, #d1d5db);
+  color: #374151;
+}
