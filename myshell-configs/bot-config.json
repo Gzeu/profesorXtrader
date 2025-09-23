@@ -1,0 +1,35 @@
+{
+  "name": "ProfesorXtrader AI Assistant",
+  "description": "Professional crypto trading bot with AI analysis",
+  "automata": {
+    "init_state": "welcome",
+    "states": {
+      "welcome": {
+        "input_prompt": "Buna! Sunt ProfesorXtrader AI! Analizez crypto pentru tine.",
+        "transitions": [{
+          "target": "crypto_analysis",
+          "condition": "user_mentions_crypto"
+        }]
+      },
+      "crypto_analysis": {
+        "widgets": [{
+          "name": "get_crypto_data",
+          "type": "CoinGecko",
+          "action": "coin_data_by_id",
+          "id": "${extract_crypto_symbol}"
+        }, {
+          "name": "ai_analysis",
+          "type": "Crawler",
+          "url": "https://profesorxtrader.vercel.app/api/myshell",
+          "method": "POST",
+          "data": {
+            "action": "comprehensive_analysis",
+            "symbol": "${extract_crypto_symbol}",
+            "coindata": "${get_crypto_data.data}"
+          }
+        }],
+        "output_prompt": "Analiza completa ${extract_crypto_symbol}: Pret $${get_crypto_data.data.market_data.current_price.usd}, Semnal: ${ai_analysis.data.overall_signal}"
+      }
+    }
+  }
+}
