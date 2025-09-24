@@ -54,7 +54,7 @@
     "date-fns": "^3.6.0",
     "@tensorflow/tfjs": "^4.20.0",
     "@tensorflow/tfjs-node": "^4.20.0",
-    "ta-lib": "^1.0.18",
+    "talib": "^1.1.6",
     "sentiment": "^5.0.2",
     "natural": "^6.12.0",
     "ml-matrix": "^6.11.1",
