@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  reactStrictMode: true,
   images: {
     domains: ['api.binance.com', 'bin.bnbstatic.com'],
     remotePatterns: [
@@ -16,7 +14,7 @@ const nextConfig = {
     CUSTOM_KEY: process.env.CUSTOM_KEY,
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Optimizări pentru WebSocket connections
+    // Optimizări pentru WebSocket connections și TensorFlow
     config.externals = [...config.externals, { canvas: 'canvas' }]
     return config
   },

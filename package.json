@@ -108,8 +108,7 @@
   "author": "George Pricop (Gzeu)",
   "license": "MIT",
   "engines": {
-    "node": ">=18.17.0",
-    "npm": ">=9.0.0"
+    "node": "20.x"
   },
   "repository": {
     "type": "git",
