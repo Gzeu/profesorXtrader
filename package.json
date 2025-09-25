@@ -1,8 +1,8 @@
 {
   "name": "profesorxtrader",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
-  "description": "Professional trading dashboard for Binance balance monitoring with AI-powered market analysis, real-time portfolio management, and MyShell AI bot integration - Enhanced 2025 Edition with Groq AI",
+  "description": "Professional trading dashboard for Binance balance monitoring with AI-powered market analysis, real-time portfolio management, and xAI Grok integration - Enhanced 2025 Edition with Advanced AI",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,8 +14,9 @@
     "indicators-test": "node scripts/test-indicators.js",
     "test-ai-api": "node scripts/test-ai-endpoints.js",
     "test-groq": "node scripts/test-groq-integration.js",
+    "test-xai": "node scripts/test-xai-integration.js",
     "test-myshell": "node scripts/test-myshell-integration.js",
-    "test-all": "npm run test-api && npm run indicators-test && npm run test-ai-api && npm run test-groq && npm run test-myshell",
+    "test-all": "npm run test-api && npm run indicators-test && npm run test-ai-api && npm run test-xai && npm run test-myshell",
     "deploy-preview": "vercel",
     "deploy-prod": "vercel --prod"
   },
@@ -40,7 +41,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-switch": "^1.1.0",
-    "@radix-ui/react-tabs": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -105,6 +106,9 @@
     "ai-bot",
     "crypto-bot",
     "trading-bot",
+    "xai",
+    "grok",
+    "elon-musk",
     "groq",
     "llama",
     "2025"
