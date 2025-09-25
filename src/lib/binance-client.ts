@@ -73,8 +73,8 @@ export class BinanceClient {
     const timestamp = Date.now()
     const queryParams = {
       ...params,
-      timestamp,
-      recvWindow: 5000
+      timestamp: timestamp.toString(),
+      recvWindow: '5000'
     }
 
     const queryString = new URLSearchParams(queryParams).toString()
