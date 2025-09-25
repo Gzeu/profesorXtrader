@@ -1,8 +1,8 @@
 {
   "name": "profesorxtrader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
-  "description": "Professional trading dashboard for Binance balance monitoring with AI-powered market analysis, real-time portfolio management, and MyShell AI bot integration - Enhanced 2025 Edition",
+  "description": "Professional trading dashboard for Binance balance monitoring with AI-powered market analysis, real-time portfolio management, and MyShell AI bot integration - Enhanced 2025 Edition with Groq AI",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,8 +13,9 @@
     "test-api": "node scripts/test-binance-connection.js",
     "indicators-test": "node scripts/test-indicators.js",
     "test-ai-api": "node scripts/test-ai-endpoints.js",
+    "test-groq": "node scripts/test-groq-integration.js",
     "test-myshell": "node scripts/test-myshell-integration.js",
-    "test-all": "npm run test-api && npm run indicators-test && npm run test-ai-api && npm run test-myshell",
+    "test-all": "npm run test-api && npm run indicators-test && npm run test-ai-api && npm run test-groq && npm run test-myshell",
     "deploy-preview": "vercel",
     "deploy-prod": "vercel --prod"
   },
@@ -63,6 +64,7 @@
     "socket.io-client": "^4.7.5",
     "zod": "^3.23.8",
     "colors": "^1.4.0",
+    "groq-sdk": "^0.7.0",
     "@types/node": "^20.16.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
@@ -103,6 +105,8 @@
     "ai-bot",
     "crypto-bot",
     "trading-bot",
+    "groq",
+    "llama",
     "2025"
   ],
   "author": "George Pricop (Gzeu)",
