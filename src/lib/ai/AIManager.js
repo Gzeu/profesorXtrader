@@ -1,11 +1,13 @@
 /**
- * AIManager.js - Updated for Groq integration
- * Orchestrates AI modules for ProfesorXTrader with Groq support
+ * AIManager.js - Updated for XAI Grok integration
+ * Orchestrates AI modules for ProfesorXTrader with XAI Grok support
+ * Supports both Groq (local) and XAI Grok (production)
  */
 import SentimentAnalyzer from './SentimentAnalyzer';
 import PricePredictor from './PricePredictor';
 import PatternRecognizer from './PatternRecognizer';
 import GroqClient from './GroqClient';
+import XAIClient from './XAIClient';
 
 class AIManager {
   constructor(options = {}) {
@@ -13,13 +15,43 @@ class AIManager {
     this.predictor = new PricePredictor(options.predictor);
     this.patterns = new PatternRecognizer(options.patterns);
     
-    // Initialize Groq client if enabled
-    this.aiProvider = process.env.AI_PROVIDER || 'groq';
-    if (this.aiProvider === 'groq' && process.env.GROQ_API_KEY) {
-      this.groqClient = new GroqClient(options.groq);
-    }
+    // AI Provider Selection Logic
+    this.aiProvider = this.selectAIProvider();
+    this.aiClient = this.initializeAIClient(options);
     
     this.initialized = false;
+    
+    console.log(`🤖 AIManager configured with provider: ${this.aiProvider}`);
+  }
+
+  selectAIProvider() {
+    // Priority: XAI Grok > Groq > None
+    if (process.env.XAI_API_KEY) {
+      return 'xai';
+    } else if (process.env.GROQ_API_KEY) {
+      return 'groq';
+    } else {
+      return process.env.AI_PROVIDER || 'none';
+    }
+  }
+
+  initializeAIClient(options) {
+    switch (this.aiProvider) {
+      case 'xai':
+        if (process.env.XAI_API_KEY) {
+          return new XAIClient(options.xai);
+        }
+        break;
+      case 'groq':
+        if (process.env.GROQ_API_KEY) {
+          return new GroqClient(options.groq);
+        }
+        break;
+      default:
+        console.warn('⚠️ No AI provider configured. Advanced features disabled.');
+        return null;
+    }
+    return null;
   }
 
   async initialize() {
@@ -28,8 +60,8 @@ class AIManager {
     try {
       await this.sentiment.initialize();
       
-      if (this.groqClient) {
-        await this.groqClient.initialize();
+      if (this.aiClient) {
+        await this.aiClient.initialize();
       }
       
       this.initialized = true;
@@ -37,7 +69,16 @@ class AIManager {
       return true;
     } catch (error) {
       console.error('❌ AIManager initialization failed:', error.message);
-      throw error;
+      
+      // Fallback: disable AI client if initialization fails
+      if (this.aiClient) {
+        console.log('🔄 Disabling AI client due to initialization failure');
+        this.aiClient = null;
+      }
+      
+      // Continue with basic functionality
+      this.initialized = true;
+      return true;
     }
   }
 
@@ -77,16 +118,16 @@ class AIManager {
         results.pattern = await this.patterns.predict(patternWindow);
       }
 
-      // Enhanced analysis with Groq if available
-      if (this.groqClient && texts.length) {
+      // Enhanced analysis with AI provider
+      if (this.aiClient && texts.length) {
         try {
-          const groqAnalysis = await this.groqClient.analyzeSentiment(
+          const aiAnalysis = await this.aiClient.analyzeSentiment(
             texts.join(' '), 
             symbol
           );
-          results.groqAnalysis = groqAnalysis;
+          results.aiAnalysis = aiAnalysis;
         } catch (error) {
-          console.warn('Groq analysis failed:', error.message);
+          console.warn(`${this.aiProvider.toUpperCase()} analysis failed:`, error.message);
         }
       }
 
@@ -99,14 +140,27 @@ class AIManager {
   }
 
   async getAIInsights(marketData, symbol) {
-    if (!this.groqClient) {
-      throw new Error('AI insights require Groq integration. Check GROQ_API_KEY.');
+    if (!this.aiClient) {
+      throw new Error(`AI insights require ${this.aiProvider.toUpperCase()} integration. Check API key.`);
     }
 
     try {
-      return await this.groqClient.analyzeMarketTrend(marketData, symbol);
+      return await this.aiClient.analyzeMarketTrend(marketData, symbol);
     } catch (error) {
       console.error('AI insights failed:', error.message);
+      throw error;
+    }
+  }
+
+  async generateTradingStrategy(marketData, riskTolerance = 'medium') {
+    if (!this.aiClient || !this.aiClient.generateTradingStrategy) {
+      throw new Error('Trading strategy generation requires XAI Grok integration.');
+    }
+
+    try {
+      return await this.aiClient.generateTradingStrategy(marketData, riskTolerance);
+    } catch (error) {
+      console.error('Trading strategy generation failed:', error.message);
       throw error;
     }
   }
@@ -115,12 +169,19 @@ class AIManager {
     return {
       initialized: this.initialized,
       provider: this.aiProvider,
-      groqAvailable: !!this.groqClient,
+      aiClientAvailable: !!this.aiClient,
+      capabilities: {
+        sentiment: true,
+        prediction: true,
+        patterns: true,
+        aiInsights: !!this.aiClient,
+        tradingStrategy: !!(this.aiClient?.generateTradingStrategy)
+      },
       modules: {
         sentiment: this.sentiment.initialized || false,
         predictor: this.predictor.initialized || false,
         patterns: this.patterns.initialized || false,
-        groq: this.groqClient?.initialized || false
+        aiClient: this.aiClient?.initialized || false
       }
     };
   }
@@ -129,7 +190,7 @@ class AIManager {
     this.sentiment.dispose();
     this.predictor.dispose();
     this.patterns.dispose();
-    if (this.groqClient) this.groqClient.dispose();
+    if (this.aiClient) this.aiClient.dispose();
     this.initialized = false;
   }
 }
