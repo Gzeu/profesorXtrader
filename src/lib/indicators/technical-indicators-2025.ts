@@ -266,7 +266,7 @@ export class TechnicalIndicators2025 {
       const rsiWindow = rsiValues.slice(i - lookback, i + 1)
       
       const pricePeaks = MathUtils.findPeaks(priceWindow, 3)
-      const priceT thoughts = MathUtils.findTroughs(priceWindow, 3)
+      const priceTroughs = MathUtils.findTroughs(priceWindow, 3)
       const rsiPeaks = MathUtils.findPeaks(rsiWindow, 3)
       const rsiTroughs = MathUtils.findTroughs(rsiWindow, 3)
       
