@@ -8,16 +8,6 @@
     "autoAlias": true,
     "autoJobCancelation": true
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next@latest",
-      "config": {
-        "maxLambdaSize": "50mb",
-        "includeFiles": "src/**"
-      }
-    }
-  ],
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
