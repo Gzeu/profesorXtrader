@@ -46,7 +46,6 @@
     "@tensorflow/tfjs-node": "^4.20.0",
     "lightweight-charts": "^4.2.0",
     "tradingview-charting-library": "^24.005",
-    "datafeeds-api": "^1.15.0",
     "technicalindicators": "^3.1.0",
     "sentiment": "^5.0.2",
     "natural": "^6.12.0",
