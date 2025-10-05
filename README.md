@@ -1,347 +1,232 @@
-# 🚀 ProfesorXTrader - Professional Trading Dashboard 2025
+# 🚀 ProfesorXTrader
 
-> **Advanced Trading Platform** cu AI-powered analysis, real-time microsecond streaming, și technical indicators de ultimă generație.
+**AI-Powered Cryptocurrency Trading Dashboard & Portfolio Management System**
 
-[![CI/CD Pipeline](https://github.com/Gzeu/profesorXtrader/actions/workflows/ci.yml/badge.svg)](https://github.com/Gzeu/profesorXtrader/actions/workflows/ci.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-15.x-black.svg)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.x-blue.svg)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-Testing%20Phase-yellow.svg)](https://github.com/Gzeu/profesorXtrader)
+[![CI/CD Pipeline](https://github.com/Gzeu/profesorXtrader/workflows/CI/CD%20Pipeline%20-%20ProfessorXTrader/badge.svg)](https://github.com/Gzeu/profesorXtrader/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.33-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-blue)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.10-38B2AC)](https://tailwindcss.com/)
 
-## 🧪 **Testing Phase - Ready for Comprehensive Testing**
+## ✨ Features
 
-> **Toate branchurile au fost unificate pe `main`** - proiectul este gata pentru testări complete!
+### 🎯 **Core Trading Features**
+- **Real-time Portfolio Tracking** - Monitor your cryptocurrency holdings with live market data
+- **Advanced Analytics** - Comprehensive performance metrics, P&L tracking, and risk analysis
+- **AI-Powered Analysis** - Machine learning models for price prediction and market sentiment
+- **Interactive Charts** - Technical indicators, pattern recognition, and visual analysis tools
+- **Live Market Feed** - Real-time price updates and market news integration
+- **Risk Management** - Advanced risk metrics including VaR, Sharpe ratio, and drawdown analysis
 
-### **🎯 Status Curent:**
-- ✅ **Branch Unification:** Toate feature-urile merged pe main
-- ✅ **CI/CD Pipeline:** Functional și optimizat 
-- ✅ **MyShell Integration:** Complet implementată
-- ✅ **Phase 4 AI Features:** Foundation ready
-- ✅ **Build System:** Stable cu Node 20.x
-- 🧪 **Testing Phase:** READY TO START
+### 🛠 **Technical Architecture**
+- **Next.js 14** with App Router for modern React development
+- **TypeScript** for type-safe development
+- **Tailwind CSS** + **Radix UI** for beautiful, accessible components
+- **TensorFlow.js** for client-side AI model execution
+- **Binance API** integration for real-time market data
+- **WebSocket** connections for live updates
+- **Comprehensive Testing** with Jest and React Testing Library
 
-### **🔄 Ce a fost unificat:**
-1. **fix/ci branch** - CI/CD improvements și Node 20 optimization
-2. **feature/myshell-integration** - Complete MyShell AI bot integration
-3. **phase4-ai-automation** - AI automation foundation
+## 🚀 Quick Start
 
----
+### Prerequisites
+- Node.js ≥ 18.0.0
+- npm ≥ 8.0.0
+- Git
 
-## ✨ **Features 2025 Upgrade**
-
-### 🔥 **Real-time Monitoring**
-- **✅ Spot Wallet** - Monitorizare completă portofoliu spot
-- **✅ Futures Wallet** - Management avansat futures positions
-- **🆕 WebSocket μs Stream** - Live streaming cu actualizări la **microsecunde** (2025 upgrade)
-- **⚡ High-Performance** - Peste 1000+ mesaje/sec cu latență sub 10ms
-
-### 🧠 **AI & Machine Learning**
-- **🆕 Neural Networks 2025** - Rețele neuronale moderne cu arhitecturi avansate
-- **🔄 Pattern Recognition** - Detectare automată de pattern-uri (In Development)
-- **📊 Sentiment Analysis** - Analiză sentiment din multiple surse (In Development)
-- **🎯 Advanced Predictive Analysis** - Modele predictive cu precizie îmbunătățită
-- **🤖 MyShell AI Integration** - Complete trading bot pe platforma MyShell
-
-### 📈 **Technical Indicators 2025**
-Suită completă de indicatori tehnici moderni:
-
-- **✅ VWAP Enhanced** - VWAP cu benzi de deviație și analiză de volum
-- **🔄 RSI with Divergences** - RSI cu detectare automată de divergențe (In Development)
-- **📋 OBV + Volume Profile** - On-Balance Volume cu profil de volum avansat (Planned)
-- **📊 Pattern Detection** - Detectare Head & Shoulders, Double Top/Bottom, Triangles
-- **⚡ Real-time Calculations** - Calcule în timp real cu optimizări de performanță
-
-## 🛠️ **Tech Stack**
-
-### **Frontend**
-- **Next.js 15.x** - React framework cu App Router
-- **React 19.x** - Latest React cu Concurrent Features
-- **TypeScript 5.x** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **Shadcn/UI** - Modern component library
-- **Radix UI** - Unstyled, accessible components
-
-### **Backend & APIs**
-- **Binance API** - Spot & Futures trading APIs
-- **WebSocket Streams** - Real-time data cu μs precision
-- **RESTful APIs** - pentru configurări și date istorice
-- **MyShell API Integration** - Trading bot monetization
-
-### **AI & Analytics**
-- **TensorFlow.js** - Machine learning în browser
-- **ML-Matrix** - Operații matematice avansate
-- **Custom Neural Networks** - Implementări propriii pentru trading
-- **Natural Language Processing** - Pentru sentiment analysis
-- **MyShell AI Bot** - Monetizable crypto trading assistant
-
-### **Development & CI/CD**
-- **GitHub Actions** - Automated testing & deployment
-- **ESLint & Prettier** - Code quality & formatting
-- **Jest** - Unit testing framework
-- **Vercel** - Production deployment
-- **Node 20.x** - Optimized runtime environment
-
-## 🧪 **Testing Setup - Quick Start**
-
-### **Prerequisites**
-- Node.js 20.x sau superior (REQUIRED)
-- npm sau yarn
-- Binance API credentials (opțional pentru live trading)
-
-### **Installation pentru Testing**
+### Installation
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/Gzeu/profesorXtrader.git
 cd profesorXtrader
 
-# Verify Node version (must be 20.x)
-node --version
+# Install dependencies
+npm install
 
-# Install dependencies (optimized for Node 20)
-npm ci
-
-# Setup environment variables for testing
+# Set up environment variables
 cp .env.example .env.local
-# Editează .env.local cu API keys
-
-# Verify build system
-npm run build
-
-# Test MyShell integration
-npm run test-myshell
+# Edit .env.local with your API keys
 
 # Start development server
 npm run dev
 ```
 
-### **Environment Variables pentru Testing**
+### Environment Variables
 
-```env
-# Binance API (REQUIRED pentru testing complet)
-BINANCE_API_KEY=your_api_key
-BINANCE_SECRET_KEY=your_secret_key
-TESTNET=true  # IMPORTANT: Use testnet pentru testing
-
-# AI Features (opțional)
-ENABLE_AI_FEATURES=true
-OPENAI_API_KEY=your_openai_key
-GROQ_API_KEY=your_groq_key
-
-# MyShell Integration (pentru bot testing)
-MYSHELL_WEBHOOK_SECRET=your_webhook_secret
-
-# Database (opțional pentru testing avansat)
-DATABASE_URL=postgresql://...
-```
-
-## 🔧 **Testing Commands**
-
-### **Core Testing Scripts**
+Create a `.env.local` file in the root directory:
 
 ```bash
-# Build verification
-npm run build        # Test build process
-npm run type-check   # TypeScript validation
-npm run lint         # Code quality check
+# Binance API Configuration
+NEXT_PUBLIC_BINANCE_API_KEY=your_binance_api_key
+NEXT_PUBLIC_BINANCE_SECRET_KEY=your_binance_secret_key
+NEXT_PUBLIC_BINANCE_TESTNET=true
 
-# Feature Testing
-npm run test            # Unit tests
-npm run test-myshell    # MyShell integration tests
-npm run test-api        # Binance API connection test
-npm run test-all        # Comprehensive test suite
+# AI & Analytics
+NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key
+NEXT_PUBLIC_FOUR_MEME_REF_CODE=your_referral_code
 
-# Development Testing
-npm run dev             # Development server cu hot reload
-npm run start           # Production server test
-
-# CI/CD Testing
-npm run deploy-staging  # Deploy to staging pentru testing
-npm run deploy-prod     # Deploy to production (after testing)
+# Application Settings
+NEXT_PUBLIC_APP_ENV=development
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
 ```
 
-### **Testing Checklist**
+## 📱 Application Structure
 
-#### **🔴 Core Functionality Testing**
-- [ ] **Build System:** `npm run build` succeeds fără erori
-- [ ] **TypeScript:** `npm run type-check` passes
-- [ ] **Linting:** `npm run lint` clean
-- [ ] **Unit Tests:** `npm run test` toate testele pass
-- [ ] **Development Server:** `npm run dev` starts successfully
+### Pages & Navigation
+- **Dashboard** (`/`) - Overview of portfolio, recent trades, and key metrics
+- **Charts** (`/charts`) - Advanced charting with technical indicators
+- **Trading** (`/trading`) - Execute trades and manage positions  
+- **AI Analysis** (`/ai-analysis`) - AI predictions and market insights
+- **Portfolio** (`/portfolio`) - Asset allocation and performance tracking
+- **Live Feed** (`/live-feed`) - Real-time market data and news
+- **Settings** (`/settings`) - User preferences and configuration
 
-#### **🟡 API Integration Testing**
-- [ ] **Binance Connection:** `npm run test-api` connects successfully
-- [ ] **WebSocket Streams:** Real-time data flows correctly
-- [ ] **MyShell Integration:** `npm run test-myshell` validates endpoints
-- [ ] **Error Handling:** API errors handled gracefully
+### Key Components
+```
+src/
+├── services/
+│   ├── analytics/          # Trading performance & user analytics
+│   ├── binance/           # Binance API integration
+│   ├── ai/               # AI model services
+│   └── websocket/        # Real-time data connections
+├── components/
+│   ├── layout/           # Navigation and layout components
+│   ├── ui/              # Reusable UI components
+│   └── trading/         # Trading-specific components
+app/
+├── api/                 # Next.js API routes
+├── (dashboard)/         # Main application pages
+└── globals.css         # Global styles
+```
 
-#### **🟢 Advanced Feature Testing**
-- [ ] **AI Analysis:** Neural network predictions functional
-- [ ] **Technical Indicators:** VWAP, RSI calculations accurate
-- [ ] **Real-time Updates:** μs precision streaming works
-- [ ] **MyShell Bot:** Conversation flow și monetization active
-- [ ] **Performance:** < 2s response times
+## 🔧 Development
 
-#### **🔵 Production Readiness**
-- [ ] **Staging Deploy:** Successful deployment la staging
-- [ ] **Production Build:** Optimized build verificat
-- [ ] **Environment Variables:** Toate API keys configurate
-- [ ] **Security:** No sensitive data în logs
-- [ ] **Performance Monitoring:** Sub 10ms latency
-
-## 📊 **Testing Examples**
-
-### **1. Test Binance API Connection**
+### Available Scripts
 
 ```bash
-# Test basic connection
-npm run test-api
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
 
-# Expected output:
-# ✅ Binance API connected successfully
-# ✅ Account info retrieved
-# ✅ WebSocket stream established
-# ✅ Real-time data flowing
+# Code Quality
+npm run lint         # Run ESLint
+npm run lint:fix     # Auto-fix ESLint issues
+npm run type-check   # TypeScript type checking
+
+# Testing
+npm run test         # Run Jest tests
+npm run test:watch   # Run tests in watch mode
+npm run test:coverage # Generate coverage report
 ```
 
-### **2. Test MyShell Integration**
+### Project Standards
+- **ESLint** + **Prettier** for code formatting
+- **TypeScript** strict mode enabled
+- **Conventional Commits** for version control
+- **Automated testing** with comprehensive coverage
+- **CI/CD pipeline** with GitHub Actions
 
+## 🧠 AI & Machine Learning Features
+
+### Implemented Models
+- **Price Prediction** - LSTM neural networks for short-term price forecasting
+- **Pattern Detection** - Technical pattern recognition using computer vision
+- **Sentiment Analysis** - News and social media sentiment for market insights
+- **Risk Assessment** - Portfolio optimization and risk management algorithms
+
+### Model Performance Tracking
+- Real-time accuracy monitoring
+- A/B testing for model improvements
+- Performance metrics (precision, recall, F1-score)
+- Recommendation profitability analysis
+
+## 📊 Trading Analytics
+
+### Performance Metrics
+- **P&L Tracking** - Realized and unrealized profits/losses
+- **Risk Metrics** - VaR, Expected Shortfall, Beta, Correlation
+- **Performance Ratios** - Sharpe, Sortino, Calmar ratios
+- **Trade Statistics** - Win rate, average win/loss, profit factor
+- **Drawdown Analysis** - Maximum and current drawdown tracking
+
+### User Behavior Analytics
+- Session tracking and user journey optimization
+- Feature usage heat maps
+- Performance monitoring (page load, API response times)
+- A/B testing framework for UI improvements
+
+## 🔒 Security & Best Practices
+
+- **API Key Management** - Secure storage and rotation
+- **Rate Limiting** - Protection against API abuse
+- **Input Validation** - Comprehensive data validation
+- **Error Handling** - Graceful error recovery
+- **CORS Configuration** - Secure cross-origin requests
+- **Environment Separation** - Development/staging/production configs
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
 ```bash
-# Test complete MyShell flow
-npm run test-myshell
+# Install Vercel CLI
+npm i -g vercel
 
-# Expected output:
-# ✅ MyShell API endpoints responding
-# ✅ Bot configuration loaded
-# ✅ Webhook functionality verified
-# ✅ Monetization features active
+# Deploy to Vercel
+vercel
 ```
 
-### **3. Performance Testing**
-
-```tsx
-import { performance } from 'perf_hooks'
-import { useFuturesStream } from '@/hooks/useFuturesStream'
-
-// Test WebSocket latency
-const start = performance.now()
-const { marketData } = useFuturesStream(['BTCUSDT'])
-const latency = performance.now() - start
-
-console.log(`WebSocket latency: ${latency}ms`) // Should be < 10ms
-```
-
-## 🎯 **Performance Targets pentru Testing**
-
-### **Real-time Metrics**
-- **Latență WebSocket:** < 10ms average ✅
-- **Throughput:** 1000+ messages/second ✅
-- **Precisie timestamp:** Microsecunde (μs) ✅
-- **Memory usage:** < 200MB pentru 50+ simboluri ✅
-- **Build time:** < 2 minute ✅
-
-### **AI Model Performance**
-- **Predicție preț:** ~72% accuracy pe timeframes scurte
-- **Pattern detection:** ~85% precision pentru pattern-uri majore
-- **Sentiment analysis:** ~78% correlation cu mișcările de piață
-- **Training time:** 2-5 minute pentru modele standard
-- **MyShell response:** < 2s pentru analiza completă
-
-## 🔐 **Security Testing**
-
-- **API Keys encryption** în environment variables ✅
-- **Rate limiting** pentru API calls ✅
-- **WebSocket security** cu origine validation ✅
-- **No sensitive data** în localStorage ✅
-- **Testnet support** pentru development safe ✅
-- **MyShell webhook security** cu signature validation ✅
-
-## 🌐 **Deployment Testing**
-
-### **Vercel Testing**
-
+### Docker
 ```bash
-# Test staging deployment
-npm run build
-vercel --prod --name profesorxtrader-staging
+# Build Docker image
+docker build -t profesorxtrader .
 
-# Verify deployment
-curl https://profesorxtrader-staging.vercel.app/api/health
-# Expected: {"status":"healthy","timestamp":"..."}
+# Run container
+docker run -p 3000:3000 profesorxtrader
 ```
 
-### **Environment Testing**
+## 🧪 Testing
 
-```bash
-# Test all environments
-NODE_ENV=development npm run test-all
-NODE_ENV=staging npm run test-all
-NODE_ENV=production npm run test-all
-```
+- **Unit Tests** - Components and utility functions
+- **Integration Tests** - API routes and services
+- **E2E Tests** - Complete user workflows
+- **Performance Tests** - Load testing for API endpoints
 
-## 📈 **Testing Results Tracking**
+## 📈 Performance Optimization
 
-### **Daily Testing Metrics**
-- **Build Success Rate:** Track daily builds
-- **Test Coverage:** Maintain > 80% coverage
-- **API Uptime:** Monitor Binance/MyShell connectivity
-- **Performance Degradation:** Alert la >15ms latency
-- **Error Rate:** Keep < 1% error rate
+- **Next.js Optimizations** - Image optimization, code splitting
+- **Bundle Analysis** - Webpack bundle optimization
+- **Caching Strategy** - API response caching and static generation
+- **CDN Integration** - Asset delivery optimization
 
-### **Weekly Testing Reports**
-- **Feature Completion:** Track feature development
-- **Bug Fixes:** Monitor și resolve issues
-- **Performance Optimization:** Continuous improvements
-- **Security Audits:** Regular vulnerability scanning
+## 🤝 Contributing
 
-## 🚨 **Known Issues pentru Testing**
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-1. **Rate Limiting:** Binance API limits la 1200 requests/minute
-2. **WebSocket Reconnection:** Handle network interruptions
-3. **MyShell Latency:** External API dependency
-4. **Node Version:** Requires exactly Node 20.x
-5. **Memory Leaks:** Monitor long-running sessions
+## 📄 License
 
-## 🤝 **Contributing la Testing**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Testing contributions are welcome! Please:
+## 🙏 Acknowledgments
 
-1. **Run toate testele** înainte de PR
-2. **Add new tests** pentru new features
-3. **Document test scenarios** în PR description
-4. **Update README** cu new testing procedures
-5. **Report bugs** cu detailed reproduction steps
+- **Binance API** - Cryptocurrency market data
+- **TensorFlow.js** - Machine learning capabilities
+- **Radix UI** - Accessible component primitives
+- **Tailwind CSS** - Utility-first CSS framework
+- **Next.js** - React application framework
 
-## 📄 **License**
+## 📞 Support
 
-MIT License - see [LICENSE](LICENSE) file pentru details.
-
-## 🙏 **Acknowledgments**
-
-- **Binance** - Pentru API-ul comprehensive
-- **MyShell** - Pentru AI bot platform
-- **TensorFlow.js** - Pentru ML capabilities în browser
-- **Next.js Team** - Pentru framework-ul excelent
-- **Vercel** - Pentru hosting gratuit
-- **Shadcn** - Pentru UI components frumoase
-
-## 📞 **Support & Testing Issues**
-
-- 🐛 **Issues:** [GitHub Issues](https://github.com/Gzeu/profesorXtrader/issues)
-- 🧪 **Testing Problems:** Use label `testing` în issues
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/Gzeu/profesorXtrader/discussions)
-- 📧 **Email:** support@profesorxtrader.com
-- 🐦 **Twitter:** [@ProfesorXTrader](https://twitter.com/ProfesorXTrader)
+For support and questions:
+- **GitHub Issues** - [Create an issue](https://github.com/Gzeu/profesorXtrader/issues)
+- **Email** - pricopgeorge@gmail.com
+- **Documentation** - [Wiki](https://github.com/Gzeu/profesorXtrader/wiki)
 
 ---
 
-<div align="center">
-  <strong>🧪 TESTING PHASE ACTIVE 🧪</strong>
-  <br>
-  <em>Toate branchurile unificate pe main - Ready for comprehensive testing!</em>
-  <br><br>
-  <strong>Construit cu ❤️ în România 🇷🇴</strong>
-  <br>
-  <em>Pentru traderi profesionali care vor tehnologie de vârf</em>
-</div>
+**ProfesorXTrader** - Empowering traders with AI-driven insights and professional-grade analytics. 📈🤖
