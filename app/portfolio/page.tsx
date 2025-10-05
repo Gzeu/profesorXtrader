@@ -3,8 +3,7 @@
 import { Navigation } from '@/components/layout/Navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { BarChart3, TrendingUp, DollarSign, PieChart } from 'lucide-react'
+import { BarChart3, PieChart } from 'lucide-react'
 
 export default function PortfolioPage() {
   return (
@@ -29,7 +28,7 @@ export default function PortfolioPage() {
                 <CardTitle className='text-sm font-medium'>Total Value</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className='text-2xl font-bold'>,456.78</div>
+                <div className='text-2xl font-bold'>$12,456.78</div>
                 <p className='text-xs text-green-600'>+2.3% today</p>
               </CardContent>
             </Card>
@@ -39,7 +38,7 @@ export default function PortfolioPage() {
                 <CardTitle className='text-sm font-medium'>P&L Today</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className='text-2xl font-bold text-green-600'>+.56</div>
+                <div className='text-2xl font-bold text-green-600'>+$234.56</div>
                 <p className='text-xs text-muted-foreground'>+1.9%</p>
               </CardContent>
             </Card>
@@ -83,7 +82,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className='text-right'>
                       <div className='font-semibold'>45.2%</div>
-                      <div className='text-sm text-muted-foreground'>,623</div>
+                      <div className='text-sm text-muted-foreground'>$5,623</div>
                     </div>
                   </div>
 
@@ -94,7 +93,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className='text-right'>
                       <div className='font-semibold'>28.7%</div>
-                      <div className='text-sm text-muted-foreground'>,574</div>
+                      <div className='text-sm text-muted-foreground'>$3,574</div>
                     </div>
                   </div>
 
@@ -105,7 +104,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className='text-right'>
                       <div className='font-semibold'>15.3%</div>
-                      <div className='text-sm text-muted-foreground'>,905</div>
+                      <div className='text-sm text-muted-foreground'>$1,905</div>
                     </div>
                   </div>
 
@@ -116,7 +115,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className='text-right'>
                       <div className='font-semibold'>10.8%</div>
-                      <div className='text-sm text-muted-foreground'>,355</div>
+                      <div className='text-sm text-muted-foreground'>$1,355</div>
                     </div>
                   </div>
                 </div>
@@ -156,7 +155,7 @@ export default function PortfolioPage() {
                     <div className='text-sm text-muted-foreground'>Long position closed</div>
                   </div>
                   <div className='text-right'>
-                    <Badge variant='default'>+.78</Badge>
+                    <Badge variant='default'>+$123.78</Badge>
                     <div className='text-sm text-green-600 mt-1'>+2.3%</div>
                   </div>
                 </div>
@@ -167,7 +166,7 @@ export default function PortfolioPage() {
                     <div className='text-sm text-muted-foreground'>Short position closed</div>
                   </div>
                   <div className='text-right'>
-                    <Badge variant='secondary'>-.45</Badge>
+                    <Badge variant='secondary'>-$45.23</Badge>
                     <div className='text-sm text-red-600 mt-1'>-0.9%</div>
                   </div>
                 </div>
@@ -178,7 +177,7 @@ export default function PortfolioPage() {
                     <div className='text-sm text-muted-foreground'>Long position closed</div>
                   </div>
                   <div className='text-right'>
-                    <Badge variant='default'>+.89</Badge>
+                    <Badge variant='default'>+$67.89</Badge>
                     <div className='text-sm text-green-600 mt-1'>+3.1%</div>
                   </div>
                 </div>
