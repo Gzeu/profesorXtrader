@@ -1,347 +1,268 @@
-# 🚀 ProfesorXTrader - Professional Trading Dashboard 2025
+# 🚀 ProfesorXTrader v2.0 - MultiversX Integration
 
-> **Advanced Trading Platform** cu AI-powered analysis, real-time microsecond streaming, și technical indicators de ultimă generație.
+<div align="center">
+  
+[![Next.js](https://img.shields.io/badge/Next.js-14.x-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18.x-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![MultiversX](https://img.shields.io/badge/MultiversX-Integrated-00D4FF?style=for-the-badge&logo=elrond)](https://multiversx.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow.js-AI%20Powered-FF6F00?style=for-the-badge&logo=tensorflow)](https://www.tensorflow.org/js)
 
-[![CI/CD Pipeline](https://github.com/Gzeu/profesorXtrader/actions/workflows/ci.yml/badge.svg)](https://github.com/Gzeu/profesorXtrader/actions/workflows/ci.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-15.x-black.svg)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.x-blue.svg)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-Testing%20Phase-yellow.svg)](https://github.com/Gzeu/profesorXtrader)
+</div>
 
-## 🧪 **Testing Phase - Ready for Comprehensive Testing**
+## 🎯 **Advanced Cross-Chain Trading Platform with AI**
 
-> **Toate branchurile au fost unificate pe `main`** - proiectul este gata pentru testări complete!
+**ProfesorXTrader v2.0** is a next-generation trading platform featuring **native MultiversX integration**, cross-chain capabilities, and machine learning for real-time predictive analytics.
 
-### **🎯 Status Curent:**
-- ✅ **Branch Unification:** Toate feature-urile merged pe main
-- ✅ **CI/CD Pipeline:** Functional și optimizat 
-- ✅ **MyShell Integration:** Complet implementată
-- ✅ **Phase 4 AI Features:** Foundation ready
-- ✅ **Build System:** Stable cu Node 20.x
-- 🧪 **Testing Phase:** READY TO START
+### ⭐ **v2.0 Features**
 
-### **🔄 Ce a fost unificat:**
-1. **fix/ci branch** - CI/CD improvements și Node 20 optimization
-2. **feature/myshell-integration** - Complete MyShell AI bot integration
-3. **phase4-ai-automation** - AI automation foundation
+#### 🌐 **MultiversX Native Integration**
+- **🔗 Complete SDK**: All @multiversx/sdk-* packages integrated
+- **👛 Multi-Wallet Support**: DeFi Wallet, xPortal, Web Wallet, Ledger
+- **📊 Real-time EGLD Data**: WebSocket live price feeds
+- **⚡ Smart Contract Interaction**: Direct blockchain trading
 
----
+#### 🔄 **Cross-Chain Trading**
+- **Multi-Blockchain**: MultiversX + BSC + Ethereum
+- **🔍 Arbitrage Detection**: Automated cross-network opportunities
+- **🌉 Bridge Integration**: Secure cross-chain transfers
+- **📈 Unified Portfolio**: All-network asset visualization
 
-## ✨ **Features 2025 Upgrade**
+#### 🤖 **AI-Powered Features**
+- **🧠 TensorFlow.js Integration**: In-browser machine learning
+- **📊 Predictive Analytics**: AI-driven trend analysis
+- **⚡ Real-time Insights**: Intelligent trading recommendations
+- **📈 Pattern Recognition**: Profitable setup identification
 
-### 🔥 **Real-time Monitoring**
-- **✅ Spot Wallet** - Monitorizare completă portofoliu spot
-- **✅ Futures Wallet** - Management avansat futures positions
-- **🆕 WebSocket μs Stream** - Live streaming cu actualizări la **microsecunde** (2025 upgrade)
-- **⚡ High-Performance** - Peste 1000+ mesaje/sec cu latență sub 10ms
+#### 🎨 **Modern UI/UX**
+- **🌙 Dark/Light Theme**: MultiversX-inspired design system
+- **📱 Mobile-First**: Complete responsive design
+- **⚡ Framer Motion**: Smooth animations + micro-interactions
+- **📊 Advanced Charts**: TradingView-style with lightweight-charts
 
-### 🧠 **AI & Machine Learning**
-- **🆕 Neural Networks 2025** - Rețele neuronale moderne cu arhitecturi avansate
-- **🔄 Pattern Recognition** - Detectare automată de pattern-uri (In Development)
-- **📊 Sentiment Analysis** - Analiză sentiment din multiple surse (In Development)
-- **🎯 Advanced Predictive Analysis** - Modele predictive cu precizie îmbunătățită
-- **🤖 MyShell AI Integration** - Complete trading bot pe platforma MyShell
+## 🚀 **Quick Start**
 
-### 📈 **Technical Indicators 2025**
-Suită completă de indicatori tehnici moderni:
+### 📋 **System Requirements**
+- **Node.js**: >= 20.0.0
+- **npm**: >= 9.0.0 or **yarn**: >= 1.22.0
+- **Git**: Latest version
 
-- **✅ VWAP Enhanced** - VWAP cu benzi de deviație și analiză de volum
-- **🔄 RSI with Divergences** - RSI cu detectare automată de divergențe (In Development)
-- **📋 OBV + Volume Profile** - On-Balance Volume cu profil de volum avansat (Planned)
-- **📊 Pattern Detection** - Detectare Head & Shoulders, Double Top/Bottom, Triangles
-- **⚡ Real-time Calculations** - Calcule în timp real cu optimizări de performanță
-
-## 🛠️ **Tech Stack**
-
-### **Frontend**
-- **Next.js 15.x** - React framework cu App Router
-- **React 19.x** - Latest React cu Concurrent Features
-- **TypeScript 5.x** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **Shadcn/UI** - Modern component library
-- **Radix UI** - Unstyled, accessible components
-
-### **Backend & APIs**
-- **Binance API** - Spot & Futures trading APIs
-- **WebSocket Streams** - Real-time data cu μs precision
-- **RESTful APIs** - pentru configurări și date istorice
-- **MyShell API Integration** - Trading bot monetization
-
-### **AI & Analytics**
-- **TensorFlow.js** - Machine learning în browser
-- **ML-Matrix** - Operații matematice avansate
-- **Custom Neural Networks** - Implementări propriii pentru trading
-- **Natural Language Processing** - Pentru sentiment analysis
-- **MyShell AI Bot** - Monetizable crypto trading assistant
-
-### **Development & CI/CD**
-- **GitHub Actions** - Automated testing & deployment
-- **ESLint & Prettier** - Code quality & formatting
-- **Jest** - Unit testing framework
-- **Vercel** - Production deployment
-- **Node 20.x** - Optimized runtime environment
-
-## 🧪 **Testing Setup - Quick Start**
-
-### **Prerequisites**
-- Node.js 20.x sau superior (REQUIRED)
-- npm sau yarn
-- Binance API credentials (opțional pentru live trading)
-
-### **Installation pentru Testing**
+### ⚡ **Installation & Setup**
 
 ```bash
 # Clone repository
 git clone https://github.com/Gzeu/profesorXtrader.git
 cd profesorXtrader
 
-# Verify Node version (must be 20.x)
-node --version
+# Install dependencies
+npm install
+# or
+yarn install
 
-# Install dependencies (optimized for Node 20)
-npm ci
-
-# Setup environment variables for testing
+# Setup environment
 cp .env.example .env.local
-# Editează .env.local cu API keys
+# Configure variables in .env.local
 
-# Verify build system
-npm run build
-
-# Test MyShell integration
-npm run test-myshell
-
-# Start development server
+# Development server
 npm run dev
+# or
+yarn dev
+
+# Open browser
+http://localhost:3000
 ```
 
-### **Environment Variables pentru Testing**
+### 🔧 **Environment Variables**
 
 ```env
-# Binance API (REQUIRED pentru testing complet)
-BINANCE_API_KEY=your_api_key
-BINANCE_SECRET_KEY=your_secret_key
-TESTNET=true  # IMPORTANT: Use testnet pentru testing
+# MultiversX Configuration
+NEXT_PUBLIC_MULTIVERSX_CHAIN=devnet
+NEXT_PUBLIC_API_URL=https://devnet-api.multiversx.com
 
-# AI Features (opțional)
-ENABLE_AI_FEATURES=true
-OPENAI_API_KEY=your_openai_key
-GROQ_API_KEY=your_groq_key
+# External APIs
+NEXT_PUBLIC_COINGECKO_API_KEY=your_api_key
+NEXT_PUBLIC_DEXSCREENER_API_KEY=your_api_key
 
-# MyShell Integration (pentru bot testing)
-MYSHELL_WEBHOOK_SECRET=your_webhook_secret
-
-# Database (opțional pentru testing avansat)
-DATABASE_URL=postgresql://...
+# Database (optional)
+DATABASE_URL=your_database_url
 ```
 
-## 🔧 **Testing Commands**
+## 🏗️ **Technical Architecture**
 
-### **Core Testing Scripts**
+### 📦 **Core Tech Stack**
+
+```javascript
+// Core Technologies
+Next.js 14      // App Router + Server Components
+React 18        // Concurrent Features + Suspense
+TypeScript 5    // Full type safety
+TensorFlow.js 4 // In-browser AI/ML
+Framer Motion 11 // Smooth animations
+
+// MultiversX Integration
+@multiversx/sdk-core              // Blockchain core functionality
+@multiversx/sdk-wallet            // Wallet connections
+@multiversx/sdk-dapp              // dApp utilities
+@multiversx/sdk-network-providers // Network providers
+```
+
+### 📁 **Project Structure**
+
+```
+src/
+├── app/                 # Next.js 14 App Router
+│   ├── globals.css      # Global styles + theme
+│   ├── layout.tsx       # Root layout component
+│   └── page.tsx         # Homepage
+├── components/          # React components
+│   ├── ui/              # Shadcn/ui base components
+│   ├── trading/         # Trading specific components
+│   └── charts/          # Chart components
+├── lib/                 # Utilities & configurations
+│   ├── multiversx/      # MultiversX SDK integration
+│   ├── ai/              # TensorFlow.js models
+│   └── utils.ts         # Helper functions
+└── hooks/               # Custom React hooks
+```
+
+### 🔗 **MultiversX Integration Details**
+
+```
+// MultiversX Configuration
+src/lib/multiversx/
+├── config.ts      # Network configurations
+├── hooks.ts       # useWallet, useAccountInfo hooks
+├── types.ts       # TypeScript definitions
+└── providers.ts   # Context providers
+
+// Supported Networks
+✓ Mainnet (production)
+✓ Testnet (staging)
+✓ Devnet (development)
+```
+
+## 🎯 **Detailed Features**
+
+### 💼 **Portfolio Management**
+- **📊 Multi-Chain Assets**: Unified visualization
+- **💰 P&L Tracking**: Real-time profit/loss
+- **📈 Performance Analytics**: Historical data + metrics
+- **🔄 Auto-Sync**: Automatic balance synchronization
+
+### 📊 **Trading Tools**
+- **📈 Advanced Charting**: Candlestick, Line, Area charts
+- **🔍 Technical Analysis**: 50+ technical indicators
+- **⚡ One-Click Trading**: Fast order execution
+- **🎯 Limit/Stop Orders**: Advanced risk management
+
+### 🤖 **AI Analytics**
+- **🧠 Price Prediction**: Machine learning models
+- **📊 Sentiment Analysis**: Social media + news sentiment
+- **🔍 Pattern Detection**: Automated chart patterns
+- **⚡ Signal Generation**: AI-powered entry/exit signals
+
+### 🔐 **Security Features**
+- **🛡️ Non-Custodial**: Assets remain in your wallet
+- **🔒 Secure Connections**: HTTPS + WebSocket Secure
+- **👛 Multi-Wallet**: Support for all popular wallets
+- **🔐 Transaction Signing**: Local wallet signing
+
+## 📈 **Roadmap v2.1+**
+
+### 🎯 **Q4 2025**
+- [ ] **DeFi Integration**: Yield farming + liquidity pools
+- [ ] **Advanced AI**: Deep learning models
+- [ ] **Mobile App**: React Native companion
+- [ ] **Social Trading**: Copy trading features
+
+### 🎯 **Q1 2026**
+- [ ] **More Chains**: Solana, Cardano, Polkadot
+- [ ] **NFT Trading**: MultiversX NFT marketplace integration
+- [ ] **Advanced Analytics**: Institutional-grade tools
+- [ ] **API Access**: RESTful API for developers
+
+## 🤝 **Contributing**
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork** the repository
+2. **Create** feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to branch (`git push origin feature/amazing-feature`)
+5. **Create** Pull Request
+
+### 📝 **Development Guidelines**
+- Use **TypeScript** for type safety
+- Follow **ESLint** + **Prettier** configurations
+- Write **tests** for new features
+- Document **API changes**
+
+## 🧪 **Testing**
 
 ```bash
-# Build verification
-npm run build        # Test build process
-npm run type-check   # TypeScript validation
-npm run lint         # Code quality check
+# Run tests
+npm test
 
-# Feature Testing
-npm run test            # Unit tests
-npm run test-myshell    # MyShell integration tests
-npm run test-api        # Binance API connection test
-npm run test-all        # Comprehensive test suite
+# Run tests with coverage
+npm run test:coverage
 
-# Development Testing
-npm run dev             # Development server cu hot reload
-npm run start           # Production server test
+# Run e2e tests
+npm run test:e2e
 
-# CI/CD Testing
-npm run deploy-staging  # Deploy to staging pentru testing
-npm run deploy-prod     # Deploy to production (after testing)
+# Lint code
+npm run lint
+
+# Type checking
+npm run type-check
 ```
 
-### **Testing Checklist**
-
-#### **🔴 Core Functionality Testing**
-- [ ] **Build System:** `npm run build` succeeds fără erori
-- [ ] **TypeScript:** `npm run type-check` passes
-- [ ] **Linting:** `npm run lint` clean
-- [ ] **Unit Tests:** `npm run test` toate testele pass
-- [ ] **Development Server:** `npm run dev` starts successfully
-
-#### **🟡 API Integration Testing**
-- [ ] **Binance Connection:** `npm run test-api` connects successfully
-- [ ] **WebSocket Streams:** Real-time data flows correctly
-- [ ] **MyShell Integration:** `npm run test-myshell` validates endpoints
-- [ ] **Error Handling:** API errors handled gracefully
-
-#### **🟢 Advanced Feature Testing**
-- [ ] **AI Analysis:** Neural network predictions functional
-- [ ] **Technical Indicators:** VWAP, RSI calculations accurate
-- [ ] **Real-time Updates:** μs precision streaming works
-- [ ] **MyShell Bot:** Conversation flow și monetization active
-- [ ] **Performance:** < 2s response times
-
-#### **🔵 Production Readiness**
-- [ ] **Staging Deploy:** Successful deployment la staging
-- [ ] **Production Build:** Optimized build verificat
-- [ ] **Environment Variables:** Toate API keys configurate
-- [ ] **Security:** No sensitive data în logs
-- [ ] **Performance Monitoring:** Sub 10ms latency
-
-## 📊 **Testing Examples**
-
-### **1. Test Binance API Connection**
+## 🚀 **Deployment**
 
 ```bash
-# Test basic connection
-npm run test-api
-
-# Expected output:
-# ✅ Binance API connected successfully
-# ✅ Account info retrieved
-# ✅ WebSocket stream established
-# ✅ Real-time data flowing
-```
-
-### **2. Test MyShell Integration**
-
-```bash
-# Test complete MyShell flow
-npm run test-myshell
-
-# Expected output:
-# ✅ MyShell API endpoints responding
-# ✅ Bot configuration loaded
-# ✅ Webhook functionality verified
-# ✅ Monetization features active
-```
-
-### **3. Performance Testing**
-
-```tsx
-import { performance } from 'perf_hooks'
-import { useFuturesStream } from '@/hooks/useFuturesStream'
-
-// Test WebSocket latency
-const start = performance.now()
-const { marketData } = useFuturesStream(['BTCUSDT'])
-const latency = performance.now() - start
-
-console.log(`WebSocket latency: ${latency}ms`) // Should be < 10ms
-```
-
-## 🎯 **Performance Targets pentru Testing**
-
-### **Real-time Metrics**
-- **Latență WebSocket:** < 10ms average ✅
-- **Throughput:** 1000+ messages/second ✅
-- **Precisie timestamp:** Microsecunde (μs) ✅
-- **Memory usage:** < 200MB pentru 50+ simboluri ✅
-- **Build time:** < 2 minute ✅
-
-### **AI Model Performance**
-- **Predicție preț:** ~72% accuracy pe timeframes scurte
-- **Pattern detection:** ~85% precision pentru pattern-uri majore
-- **Sentiment analysis:** ~78% correlation cu mișcările de piață
-- **Training time:** 2-5 minute pentru modele standard
-- **MyShell response:** < 2s pentru analiza completă
-
-## 🔐 **Security Testing**
-
-- **API Keys encryption** în environment variables ✅
-- **Rate limiting** pentru API calls ✅
-- **WebSocket security** cu origine validation ✅
-- **No sensitive data** în localStorage ✅
-- **Testnet support** pentru development safe ✅
-- **MyShell webhook security** cu signature validation ✅
-
-## 🌐 **Deployment Testing**
-
-### **Vercel Testing**
-
-```bash
-# Test staging deployment
+# Build for production
 npm run build
-vercel --prod --name profesorxtrader-staging
 
-# Verify deployment
-curl https://profesorxtrader-staging.vercel.app/api/health
-# Expected: {"status":"healthy","timestamp":"..."}
+# Start production server
+npm run start
+
+# Deploy to Vercel
+npm run deploy
 ```
 
-### **Environment Testing**
+## 📊 **Performance**
 
-```bash
-# Test all environments
-NODE_ENV=development npm run test-all
-NODE_ENV=staging npm run test-all
-NODE_ENV=production npm run test-all
-```
-
-## 📈 **Testing Results Tracking**
-
-### **Daily Testing Metrics**
-- **Build Success Rate:** Track daily builds
-- **Test Coverage:** Maintain > 80% coverage
-- **API Uptime:** Monitor Binance/MyShell connectivity
-- **Performance Degradation:** Alert la >15ms latency
-- **Error Rate:** Keep < 1% error rate
-
-### **Weekly Testing Reports**
-- **Feature Completion:** Track feature development
-- **Bug Fixes:** Monitor și resolve issues
-- **Performance Optimization:** Continuous improvements
-- **Security Audits:** Regular vulnerability scanning
-
-## 🚨 **Known Issues pentru Testing**
-
-1. **Rate Limiting:** Binance API limits la 1200 requests/minute
-2. **WebSocket Reconnection:** Handle network interruptions
-3. **MyShell Latency:** External API dependency
-4. **Node Version:** Requires exactly Node 20.x
-5. **Memory Leaks:** Monitor long-running sessions
-
-## 🤝 **Contributing la Testing**
-
-Testing contributions are welcome! Please:
-
-1. **Run toate testele** înainte de PR
-2. **Add new tests** pentru new features
-3. **Document test scenarios** în PR description
-4. **Update README** cu new testing procedures
-5. **Report bugs** cu detailed reproduction steps
+- **⚡ Lighthouse Score**: 95+ for all metrics
+- **🚀 Bundle Size**: Optimized with code splitting
+- **📱 Mobile Performance**: Native-like experience
+- **🔄 Real-time Updates**: WebSocket connections
 
 ## 📄 **License**
 
-MIT License - see [LICENSE](LICENSE) file pentru details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 **Support & Contact**
+
+- **📧 Email**: support@profesorxtrader.com
+- **💬 Telegram**: [MultiversX Trading Community](https://t.me/profesorxtrader)
+- **🐦 Twitter**: [@ProfesorXTrader](https://twitter.com/profesorxtrader)
+- **📚 Documentation**: [docs.profesorxtrader.com](https://docs.profesorxtrader.com)
+- **🐛 Issues**: [GitHub Issues](https://github.com/Gzeu/profesorXtrader/issues)
 
 ## 🙏 **Acknowledgments**
 
-- **Binance** - Pentru API-ul comprehensive
-- **MyShell** - Pentru AI bot platform
-- **TensorFlow.js** - Pentru ML capabilities în browser
-- **Next.js Team** - Pentru framework-ul excelent
-- **Vercel** - Pentru hosting gratuit
-- **Shadcn** - Pentru UI components frumoase
-
-## 📞 **Support & Testing Issues**
-
-- 🐛 **Issues:** [GitHub Issues](https://github.com/Gzeu/profesorXtrader/issues)
-- 🧪 **Testing Problems:** Use label `testing` în issues
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/Gzeu/profesorXtrader/discussions)
-- 📧 **Email:** support@profesorxtrader.com
-- 🐦 **Twitter:** [@ProfesorXTrader](https://twitter.com/ProfesorXTrader)
+- **MultiversX Team** for the amazing blockchain technology
+- **Next.js Team** for the incredible React framework
+- **TensorFlow.js Team** for making AI accessible in browsers
+- **Community Contributors** for their valuable feedback
 
 ---
 
 <div align="center">
-  <strong>🧪 TESTING PHASE ACTIVE 🧪</strong>
-  <br>
-  <em>Toate branchurile unificate pe main - Ready for comprehensive testing!</em>
-  <br><br>
-  <strong>Construit cu ❤️ în România 🇷🇴</strong>
-  <br>
-  <em>Pentru traderi profesionali care vor tehnologie de vârf</em>
+
+**🚀 Built with ❤️ for the MultiversX Community**
+
+[![MultiversX](https://img.shields.io/badge/Powered%20by-MultiversX-00D4FF?style=for-the-badge&logo=elrond)](https://multiversx.com/)
+
+*Follow us for updates and join our growing community of traders!*
+
 </div>
