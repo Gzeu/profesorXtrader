@@ -1,14 +1,22 @@
 {
-  "name": "profesorxtrader",
-  "version": "1.0.0",
+  "name": "profesorxtrader-v2",
+  "version": "2.0.0",
   "private": true,
+  "description": "Advanced Multi-Chain Trading Platform with MultiversX Integration - AI-Powered DeFi Dashboard",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test-mvx": "jest --testPathPattern=__tests__/multiversx",
+    "build:prod": "NODE_ENV=production next build",
+    "deploy:staging": "vercel --target staging",
+    "deploy:prod": "vercel --prod",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "analyze": "@next/bundle-analyzer"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -28,6 +36,7 @@
     "@radix-ui/react-toast": "^1.2.15",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.15",
     "@tensorflow/tfjs": "^4.20.0",
     "@tensorflow/tfjs-node": "^4.20.0",
     "@types/crypto-js": "^4.2.2",
@@ -36,6 +45,11 @@
     "@types/react-dom": "^18.3.0",
     "@types/sentiment": "^5.0.4",
     "@types/ws": "^8.5.12",
+    "@multiversx/sdk-core": "^13.0.0",
+    "@multiversx/sdk-wallet": "^4.2.0",
+    "@multiversx/sdk-network-providers": "^2.4.0",
+    "@multiversx/sdk-dapp": "^2.25.0",
+    "@multiversx/sdk-web-wallet-cross-window-provider": "^3.0.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
@@ -43,6 +57,7 @@
     "colors": "^1.4.0",
     "crypto-js": "^4.2.0",
     "date-fns": "^3.6.0",
+    "framer-motion": "^11.5.0",
     "groq-sdk": "^0.7.0",
     "lightweight-charts": "^4.2.0",
     "lucide-react": "^0.445.0",
@@ -54,6 +69,7 @@
     "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
     "react-tradingview-embed": "^3.0.6",
     "recharts": "^2.12.7",
     "sentiment": "^5.0.2",
@@ -63,27 +79,40 @@
     "tailwindcss": "^3.4.10",
     "tailwindcss-animate": "^1.0.7",
     "technicalindicators": "^3.1.0",
+    "wagmi": "^2.12.0",
+    "web3": "^4.11.1",
     "ws": "^8.18.0",
     "zod": "^3.23.8",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.33",
+    "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.1",
     "@types/natural": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.8",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   },
   "keywords": [
     "trading",
+    "defi",
+    "multiversx",
+    "elrond",
+    "egld",
     "binance",
     "dashboard",
     "ai",
     "cryptocurrency",
     "portfolio",
+    "blockchain",
+    "cross-chain",
     "next.js",
     "react",
     "typescript",
@@ -91,7 +120,6 @@
   ],
   "author": "Gzeu",
   "license": "MIT",
-  "description": "AI-powered cryptocurrency trading dashboard and portfolio management system",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gzeu/profesorXtrader.git"
@@ -101,7 +129,7 @@
   },
   "homepage": "https://github.com/Gzeu/profesorXtrader#readme",
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   }
 }
