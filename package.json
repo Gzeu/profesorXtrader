@@ -1,8 +1,8 @@
 {
   "name": "profesorxtrader-v2",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
-  "description": "Advanced Multi-Chain Trading Platform with MultiversX Integration - AI-Powered DeFi Dashboard",
+  "description": "Advanced Multi-Chain Trading Platform with MultiversX Integration and Bankless Onchain MCP - AI-Powered DeFi Dashboard",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,12 +11,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test-mvx": "jest --testPathPattern=__tests__/multiversx",
+    "test-bankless": "jest --testPathPattern=__tests__/bankless",
     "build:prod": "NODE_ENV=production next build",
     "deploy:staging": "vercel --target staging",
     "deploy:prod": "vercel --prod",
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
-    "analyze": "@next/bundle-analyzer"
+    "analyze": "@next/bundle-analyzer",
+    "bankless:init": "npx @bankless/onchain-mcp --version",
+    "bankless:debug": "npx @bankless/onchain-mcp --debug"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -50,6 +53,7 @@
     "@multiversx/sdk-network-providers": "^2.4.0",
     "@multiversx/sdk-dapp": "^2.25.0",
     "@multiversx/sdk-web-wallet-cross-window-provider": "^3.0.0",
+    "@bankless/onchain-mcp": "^1.0.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
@@ -113,6 +117,14 @@
     "portfolio",
     "blockchain",
     "cross-chain",
+    "bankless",
+    "onchain",
+    "mcp",
+    "ethereum",
+    "polygon",
+    "arbitrum",
+    "base",
+    "optimism",
     "next.js",
     "react",
     "typescript",
@@ -131,5 +143,16 @@
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
+  },
+  "mcpServers": {
+    "bankless": {
+      "command": "npx",
+      "args": ["@bankless/onchain-mcp"],
+      "env": {
+        "BANKLESS_API_TOKEN": "${BANKLESS_API_TOKEN}"
+      },
+      "description": "Blockchain data interaction through Bankless API",
+      "networks": ["ethereum", "polygon", "base", "arbitrum", "optimism"]
+    }
   }
 }
